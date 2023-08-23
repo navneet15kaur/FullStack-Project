@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Student Portal</title>
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/images/fav.jpg">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    
+</head>
+
+    <body>
+        
+         <!-- ################# Header Starts Here#######################--->
+
+    <header class="continer-fluid ">
+        <div  class="header-top">
+            <div class="container">
+                <div class="row col-det">
+                    <div class="col-lg-6 d-none d-lg-block">
+                        <ul class="ulleft">
+                            <li>
+                                <i class="far fa-envelope"></i>
+                                admissions@rayatbahrauniversity.edu.in
+                                <span>|</span></li>
+                            <li>
+                                <i class="fas fa-phone-volume"></i>
+                                97800-40777</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="ulright">
+                            <li>
+                                <i class="fab fa-facebook-square"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-twitter-square"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-instagram"></i>
+                            </li>
+                            <li>
+                                <i class="fab fa-linkedin"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu-jk" class="header-bottom">
+            <div class="container">
+                <div class="row nav-row">
+                    <div class="col-lg-3 col-md-12 logo">
+                        <a href="index.html">
+                            <img src="assets/images/logo.jpg" alt="">
+                        </a>
+
+                    </div>
+                    <div class="col-lg-9 col-md-12 nav-col">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+
+                            <button
+                                    class="navbar-toggler"
+                                    type="button"
+                                    data-toggle="collapse"
+                                    data-target="#navbarNav"
+                                    aria-controls="navbarNav"
+                                    aria-expanded="false"
+                                    aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="index.html">Home
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="about_us.html">About Us</a>
+                                    </li>
+                                    
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="contact_us.html">Contact US</a>
+                                    </li>
+                                    <span id="showmyaccount" class="p-3"><a class="nav-btn mr-2" href="myaccount.html"><button class="btn btn-sm btn-info">My Account </button> </a><button class="btn btn-sm btn-danger" onclick="deleteItems()">Logout</button></span>
+                                    <span id="loginshow" class="p-3"><a class="nav-btn mr-2" href="login.html"><button class="btn btn-sm btn-info">Login </button></a><a class="nav-btn" href="signup.html"><button class="btn btn-sm btn-success">Signup</button></a></span>
+
+                                       <script>
+                                        const sessemail =  sessionStorage.getItem("SessionName");
+                                        //alert(sessemail);
+                                                if(sessemail != null)
+                                                {
+                                                        //document.getElementById("showmyaccount").display = 'block';
+                                                        document.getElementById("loginshow").innerHTML= "";
+                                                }else{
+                                                    document.getElementById("showmyaccount").innerHTML="";
+                                                }
+                                       </script> 
+
+
+
+                                </ul>
+                                <a class="nav-btn mr-2" href="login.html">
+                                    <button class="btn btn-sm btn-info">Login </button>
+                                </a>
+                                <a class="nav-btn" href="sign.html">
+                                  <button class="btn btn-sm btn-success">Signup</button>
+                              </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+       
+       
+<div class="page-nav no-margin row">
+       <div class="container">
+           <div class="row">
+               <h2>Contact Us</h2>
+               <ul>
+                   <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
+                   <li><i class="fas fa-angle-double-right"></i> Contact Us</li>
+               </ul>
+           </div>
+       </div>
+   </div>
+   
+   
+   
+    <div style="margin-top:0px;" class="row no-margin">
+        
+         <iframe style="width:100%" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d109688.71943172067!2d76.53693597907154!3d30.780964448122496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x390ffa9485c539a5%3A0x7e32a159650281bc!2sV.P.O.%20Sahauran%2C%20Tehsil%20Kharar%20Distt%2C%20Kharar%2C%20Punjab%20140103!3m2!1d30.780990499999998!2d76.6193373!5e0!3m2!1sen!2sin!4v1692638633482!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      </div>
+     
+<!--################### Footer Starts Here #######################--->
+    <footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 about">
+                <h2>About Us</h2>
+                
+                
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="addet">
+                        Chandigarh-Ropar NH 205,
+                        Greater Mohali, Punjab, INDIA - 140103
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="addet">
+                        admissions@rayatbahrauniversity.edu.in
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                         <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="addet">
+                        98888-06027<br> 97800-40777
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</footer>
+
+        
+        
+    </body>
+
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
+    <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+</html>
