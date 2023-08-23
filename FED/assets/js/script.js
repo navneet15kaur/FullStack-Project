@@ -3,7 +3,23 @@ function deleteItems() {
     sessionStorage.clear();
     window.location.href = "http://127.0.0.1:5500/index.html"
   }
+       
 $( document ).ready(function() {
+
+    const sessemail =  sessionStorage.getItem("SessionName");
+    //alert(sessemail);
+    if(sessemail != null)
+    {
+        $("#sessionout").hide();
+    }else{
+        $("#showmyaccount").hide();
+    }   
+   
+    
+
+
+
+
     var w = window.innerWidth;
 
     if(w > 767){

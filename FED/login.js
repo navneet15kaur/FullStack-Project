@@ -26,6 +26,11 @@ xhr.onreadystatechange = () => {
         }
         else{
             sessionStorage.setItem("SessionName",response.email);
+            sessionStorage.setItem("SessionCName",response.name);
+            sessionStorage.setItem("Sessionphonenumber",response.phoneNumber);
+            sessionStorage.setItem("Sessionbirthdaydate",response.birthdayDate);
+            sessionStorage.setItem("Sessiongender",response.gender);
+           
            const sessemail =  sessionStorage.getItem("SessionName")
            if(sessemail != "")
            {
@@ -37,6 +42,7 @@ xhr.onreadystatechange = () => {
             window.location.href = "http://127.0.0.1:5500/index.html"
         }
         
+
     }
 }
 xhr.send(JSON.stringify(user));

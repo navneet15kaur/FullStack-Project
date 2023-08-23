@@ -88,26 +88,21 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact_us.html">Contact US</a>
                                     </li>
-                                    <span id="showmyaccount" class="p-3"><a class="nav-btn mr-2" href="myaccount.html"><button class="btn btn-sm btn-info">My Account </button> </a><button class="btn btn-sm btn-danger" onclick="deleteItems()">Logout</button></span>
-                                    <span id="loginshow" class="p-3"><a class="nav-btn mr-2" href="login.html"><button class="btn btn-sm btn-info">Login </button></a><a class="nav-btn" href="signup.html"><button class="btn btn-sm btn-success">Signup</button></a></span>
-
-                                       <script>
-                                        const sessemail =  sessionStorage.getItem("SessionName");
-                                        //alert(sessemail);
-                                                if(sessemail != null)
-                                                {
-                                                        //document.getElementById("showmyaccount").display = 'block';
-                                                        document.getElementById("loginshow").innerHTML= "";
-                                                }else{
-                                                    document.getElementById("showmyaccount").innerHTML="";
-                                                }
-                                       </script> 
+                                   
                                     
 
                                 </ul>
-                                
+                                <div id="sessionout" class=""><span class="d-flex"><a class="nav-btn mr-2 " href="login.html">
+                                    <button class="btn btn-sm btn-info">Login </button>
+                                </a>
+                                <a class="nav-btn sessionout" href="signup.html">
+                                  <button class="btn btn-sm btn-success">Signup</button>
+                              </a>
+                            </span></div>
+                            <div id="showmyaccount" class=""><span class="d-flex"><a class="nav-btn mr-2 logedinuser" href="myaccount.html"><button class="btn btn-sm btn-info">My Account </button> </a><button class="btn btn-sm btn-danger logedinuser" onclick="deleteItems()">Logout</button></span></div>
                            
-
+                           
+                           
                             </div>
                         </nav>
                     </div>
@@ -262,7 +257,6 @@
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/plugins/scroll-fixed/jquery-scrolltofixed-min.js"></script>
     <script src="assets/plugins/slider/js/owl.carousel.min.js"></script>
-    <script src="assets/js/script.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

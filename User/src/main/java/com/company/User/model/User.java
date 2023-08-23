@@ -21,18 +21,19 @@ public class User {
     private String birthdaydate;
 
     @Column(name = "phonenumber")
-    private Integer phonenumber;
+    private String phonenumber;
 
     @Column(name = "gender")
     private String gender;
 
     public User(){}
 
-    public User(String name,String email,String password,String birthdaydate,String gender){
+    public User(String name,String email,String password,String birthdaydate,String phonenumber,String gender){
         this.name=name;
         this.email=email;
         this.password=password;
         this.birthdaydate=birthdaydate;
+        this.phonenumber=phonenumber;
         this.gender=gender;
 
     }
@@ -67,11 +68,11 @@ public class User {
 
     public void setBirthdayDate(String birthdaydate) {this.birthdaydate = birthdaydate;}
 
-    public Integer getPhoneNumber() {
+    public String getPhoneNumber() {
         return phonenumber;
     }
 
-    public void setPhoneNumber(Integer phonenumber) {this.phonenumber = phonenumber;}
+    public void setPhoneNumber(String phonenumber) {this.phonenumber = phonenumber;}
 
     public String getGender() {
         return gender;

@@ -44,7 +44,8 @@ xhr.onreadystatechange=()=>{
     if (xhr.status==200 && xhr.readyState==4) {
         const response=JSON.parse(xhr.responseText);
         console.log(response);
-        //window.location.href="http://localhost:5500/login.html"
+        alert('You have been registered successfully! Please login');
+        window.location.href="/login.html"
     }
 }
 xhr.send(JSON.stringify(user));

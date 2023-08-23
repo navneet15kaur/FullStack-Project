@@ -84,27 +84,25 @@
                                     <li class="nav-item">
                                         <a class="nav-link" href="about_us.html">About Us</a>
                                     </li>
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="courses.html">Courses</a>
-                                    </li>
-
-                                    <li class="nav-item">
-                                        <a class="nav-link" href="blog.html">Blog</a>
-                                    </li>
+                                    
                                     <li class="nav-item">
                                         <a class="nav-link" href="contact_us.html">Contact US</a>
                                     </li>
-
-
-
+                                   
+                                    
 
                                 </ul>
-                                <a class="nav-btn mr-2" href="login.html">
+                                <div id="sessionout" class=""><span class="d-flex"><a class="nav-btn mr-2 " href="login.html">
                                     <button class="btn btn-sm btn-info">Login </button>
                                 </a>
-                                <a class="nav-btn" href="signup.html">
+                                <a class="nav-btn sessionout" href="signup.html">
                                   <button class="btn btn-sm btn-success">Signup</button>
                               </a>
+                            </span></div>
+                            <div id="showmyaccount" class=""><span class="d-flex"><a class="nav-btn mr-2 logedinuser" href="myaccount.html"><button class="btn btn-sm btn-info">My Account </button> </a><button class="btn btn-sm btn-danger logedinuser" onclick="deleteItems()">Logout</button></span></div>
+                           
+                           
+                           
                             </div>
                         </nav>
                     </div>
@@ -112,6 +110,7 @@
             </div>
         </div>
     </header>
+        
         
         <!--################### Slider Starts Here #######################--->
 <body>
@@ -135,11 +134,11 @@
         <div class="row">
             <div class="col-lg-4 col-md-5 xs-margin-30px-bottom">
                 <div class="team-single-img">
-                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+                    <img src="./assets/images/accimg.png" alt="">
                 </div>
-                <div class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center">
-                    <h4 class="margin-10px-bottom font-size24 md-font-size22 sm-font-size20 font-weight-600">Class Teacher</h4>
-                    <p class="sm-width-95 sm-margin-auto">We are proud of child student. We teaching great activities and best program for your kids.</p>
+                <!---<div class="bg-light-gray padding-30px-all md-padding-25px-all sm-padding-20px-all text-center">
+                    
+                    
                     <div class="margin-20px-top team-single-icons">
                         <ul class="no-margin">
                             <li><a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a></li>
@@ -148,39 +147,23 @@
                             <li><a href="javascript:void(0)"><i class="fab fa-instagram"></i></a></li>
                         </ul>
                     </div>
-                </div>
+                </div>-->
             </div>
 
             <div class="col-lg-8 col-md-7">
                 <div class="team-single-text padding-50px-left sm-no-padding-left">
-                    <h4 class="font-size38 sm-font-size32 xs-font-size30">Buckle Giarza</h4>
-                    <p class="no-margin-bottom">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum voluptatem.</p>
+                    <h4 class="font-size38 sm-font-size32 xs-font-size30" id="mname">Buckle Giarza</h4>
+                    
                     <div class="contact-info-section margin-40px-tb">
                         <ul class="list-style9 no-margin">
                             <li>
 
-                                <div class="row">
-                                    <div class="col-md-5 col-5">
-                                        <i class="fas fa-graduation-cap text-orange"></i>
-                                        <strong class="margin-10px-left text-orange">Degree:</strong>
-                                    </div>
-                                    <div class="col-md-7 col-7">
-                                        <p>Master's Degrees</p>
-                                    </div>
-                                </div>
+                                
 
                             </li>
                             <li>
 
-                                <div class="row">
-                                    <div class="col-md-5 col-5">
-                                        <i class="far fa-gem text-yellow"></i>
-                                        <strong class="margin-10px-left text-yellow">Exp.:</strong>
-                                    </div>
-                                    <div class="col-md-7 col-7">
-                                        <p>4 Year in Education</p>
-                                    </div>
-                                </div>
+                                
 
                             </li>
                             <li>
@@ -188,10 +171,10 @@
                                 <div class="row">
                                     <div class="col-md-5 col-5">
                                         <i class="far fa-file text-lightred"></i>
-                                        <strong class="margin-10px-left text-lightred">Courses:</strong>
+                                        <strong class="margin-10px-left text-lightred">Gender:</strong>
                                     </div>
                                     <div class="col-md-7 col-7">
-                                        <p>Design Category</p>
+                                        <p id="mgender"></p>
                                     </div>
                                 </div>
 
@@ -201,10 +184,10 @@
                                 <div class="row">
                                     <div class="col-md-5 col-5">
                                         <i class="fas fa-map-marker-alt text-green"></i>
-                                        <strong class="margin-10px-left text-green">Address:</strong>
+                                        <strong class="margin-10px-left text-green">DOB:</strong>
                                     </div>
                                     <div class="col-md-7 col-7">
-                                        <p>Regina ST, London, SK.</p>
+                                        <p id="mbirth"></p>
                                     </div>
                                 </div>
 
@@ -217,7 +200,7 @@
                                         <strong class="margin-10px-left xs-margin-four-left text-purple">Phone:</strong>
                                     </div>
                                     <div class="col-md-7 col-7">
-                                        <p>(+44) 123 456 789</p>
+                                        <p id="mphone"></p>
                                     </div>
                                 </div>
 
@@ -229,54 +212,15 @@
                                         <strong class="margin-10px-left xs-margin-four-left text-pink">Email:</strong>
                                     </div>
                                     <div class="col-md-7 col-7">
-                                        <p><a href="javascript:void(0)">addyour@emailhere</a></p>
+                                        <p><a id="memail" href="javascript:void(0)"></a></p>
                                     </div>
                                 </div>
                             </li>
                         </ul>
                     </div>
 
-                    <h5 class="font-size24 sm-font-size22 xs-font-size20">Professional Skills</h5>
-
-                    <div class="sm-no-margin">
-                        <div class="progress-text">
-                            <div class="row">
-                                <div class="col-7">Positive Behaviors</div>
-                                <div class="col-5 text-right">40%</div>
-                            </div>
-                        </div>
-                        <div class="custom-progress progress">
-                            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:40%" class="animated custom-bar progress-bar slideInLeft bg-sky"></div>
-                        </div>
-                        <div class="progress-text">
-                            <div class="row">
-                                <div class="col-7">Teamworking Abilities</div>
-                                <div class="col-5 text-right">50%</div>
-                            </div>
-                        </div>
-                        <div class="custom-progress progress">
-                            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:50%" class="animated custom-bar progress-bar slideInLeft bg-orange"></div>
-                        </div>
-                        <div class="progress-text">
-                            <div class="row">
-                                <div class="col-7">Time Management </div>
-                                <div class="col-5 text-right">60%</div>
-                            </div>
-                        </div>
-                        <div class="custom-progress progress">
-                            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:60%" class="animated custom-bar progress-bar slideInLeft bg-green"></div>
-                        </div>
-                        <div class="progress-text">
-                            <div class="row">
-                                <div class="col-7">Excellent Communication</div>
-                                <div class="col-5 text-right">80%</div>
-                            </div>
-                        </div>
-                        <div class="custom-progress progress">
-                            <div role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:80%" class="animated custom-bar progress-bar slideInLeft bg-yellow"></div>
-                        </div>
-                    </div>
-
+                   
+                    
                 </div>
             </div>
 
@@ -290,83 +234,45 @@
          
         
 <!--################### Footer Starts Here #######################--->
-    <footer id="contact">
-      <div class="container">
-          <div class="row">
-              <div class="col-md-3 about">
-                  <h2>About Us</h2>
-                  <p>Phasellus scelerisque ornare nisl sit amet pulvinar. Nunc non scelerisque augue. Proin et sollicitudin velit. </p>
-                  
-                  <div class="foot-address">
-                      <div class="icon">
-                          <i class="fas fa-map-marker-alt"></i>
-                      </div>
-                      <div class="addet">
-                          BlueDart
-                          Marthandam (K.K District)
-                          Tamil Nadu, IND 
-                      </div>
-                  </div>
-                  <div class="foot-address">
-                      <div class="icon">
-                          <i class="far fa-envelope-open"></i>
-                      </div>
-                      <div class="addet">
-                          info@schoolapps.com <br>
-                          AMS@schooleapps.com
-                      </div>
-                  </div>
-                  <div class="foot-address">
-                      <div class="icon">
-                           <i class="fas fa-mobile-alt"></i>
-                      </div>
-                      <div class="addet">
-                          +23 323 43434 <br>
-                          +1 3232 434 55
-                      </div>
-                  </div>
-              </div>
-              <div class="col-md-3 fotblog">
-                  <h2>From latest Blog</h2>
-                  <div class="blohjb">
-                      <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
-                      <span>22-1-2019</span>
-                  </div>
-                  <div class="blohjb">
-                      <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
-                      <span>22-1-2019</span>
-                  </div>
-                  <div class="blohjb">
-                      <p>dignissim. Integer tempor facilisis malesuada. Proin ac varius velit, tincidunt condimentum</p>
-                      <span>22-1-2019</span>
-                  </div>
-              </div>
-              <div class="col-md-3 glink">
-                   <h2>Quick Links</h2>
-                  <ul>
-                      <li><a href=""><i class="fas fa-angle-double-right"></i>Home</a></li>
-                      <li><a href=""><i class="fas fa-angle-double-right"></i>About Us</a></li>
-                      <li><a href=""><i class="fas fa-angle-double-right"></i>Courses</a></li>
-                      <li><a href=""><i class="fas fa-angle-double-right"></i>Blog</a></li>
-                      <li><a href=""><i class="fas fa-angle-double-right"></i>Gallery</a></li>
-                      <li><a href=""><i class="fas fa-angle-double-right"></i>Contact Us</a></li>
-                  </ul>
-              </div>
-              <div class="col-md-3 tags">
-                  <h2>Easy Tags</h2>
-                  <ul>
-                      <li>Finance</li>
-                      <li>Web Design</li>
-                      <li>Internet Pro</li>
-                      <li>Node Js</li>
-                      <li>Java Swing</li>
-                      <li>Angular Js</li>
-                      <li>Vue Js</li>
-                  </ul>
-              </div>
-          </div>
-      </div>
-  </footer>
+<footer id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 about">
+                <h2>About Us</h2>
+                
+                
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="addet">
+                        Chandigarh-Ropar NH 205,
+                        Greater Mohali, Punjab, INDIA - 140103 
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                        <i class="far fa-envelope-open"></i>
+                    </div>
+                    <div class="addet">
+                        admissions@rayatbahrauniversity.edu.in
+                    </div>
+                </div>
+                <div class="foot-address">
+                    <div class="icon">
+                         <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="addet">
+                        98888-06027<br> 97800-40777
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+        </div>
+    </div>
+</footer>
   
   
   
@@ -379,5 +285,22 @@
 
   
       <script src="./main.js"></script>
+      <script>
+        $(document).ready(function(){
+
+        
+        const email =  sessionStorage.getItem("SessionName");
+
+        const Cname =  sessionStorage.getItem("SessionCName");
+        const phonenumber =  sessionStorage.getItem("Sessionphonenumber");
+        const birthdaydate =  sessionStorage.getItem("Sessionbirthdaydate");
+        const gender =  sessionStorage.getItem("Sessiongender");
+        $("#memail").text(email);
+        $("#mname").text(Cname);
+        $("#mphone").text(phonenumber);
+        $("#mbirth").text(birthdaydate);
+        $("#mgender").text(gender);
+    });
+      </script>
 </body>
 </html>
